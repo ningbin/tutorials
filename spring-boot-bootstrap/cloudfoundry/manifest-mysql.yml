@@ -5,4 +5,6 @@ applications:
   random-route: true
   path: ../target/spring-boot-bootstrap-cf.jar
   env:
-    SPRING_PROFILES_ACTIVE: cloud
+    SPRING_PROFILES_ACTIVE: cloud,mysql
+  services:
+  - mysql-db
